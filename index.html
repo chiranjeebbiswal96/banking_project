@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./bank.css">
+  <script src="./bank.js"></script>
+</head>
+
+<body>
+  <section class="left">
+    <img src="./6617.jpg" alt="">
+  </section>
+  <section class="right">
+    <nav>
+      <ul class="navbar">
+        <li class="navItems">
+          <a href="https://www.usbank.com/about-us-bank.html" target="_blank">About Us</a>
+        </li>
+        <li class="navItems">
+          <a href="https://ir.usbank.com/investor-relations/contact-us" target="_blank">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Login</h1>
+      <form id="login-form" onsubmit="return validateForm('login')" action="account.html">
+        <input type="hidden" name="form-type" value="login">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button class="btn" type="submit">Sign in</button>
+        <br>
+        <p>Don't have an account? <a href="#" onclick="toggleForm()">Create one</a></p>
+      </form>
+
+      <form id="register-form" style="display:none" onsubmit="return validateForm('register')" action="account.html">
+        <input type="hidden" name="form-type" value="register">
+        <label for="new-email">Email:</label>
+        <input type="email" id="new-email" name="new-email" required>
+        <br>
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" name="new-password" required>
+        <br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br>
+        <button class="button" type="submit">Create Account</button>
+        <br>
+        <p>Already have an account? <a href="#" onclick="toggleForm()">Sign in</a></p>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

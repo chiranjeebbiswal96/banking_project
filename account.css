@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./bimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    padding: 5px 0;
+}
+
+.container span {
+    color:rgb(0, 102, 255)
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff0080;
+}
+
+#userName {
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#ff0080 ;
+    font-size: 32px;
+}
+
+#showButton{
+    padding: 5px 10px;
+    margin-top: 12.5px;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
